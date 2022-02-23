@@ -4,4 +4,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
    root "posts#index"
+
+   #create a route to be called just to remove the notification using @rails/request.js
+   get '/notice', to: 'posts#clear_message'
+
+
 end
