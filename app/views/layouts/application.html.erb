@@ -12,6 +12,11 @@
   </head>
 
   <body>
+
+    <!-- add notifications -->
+    <%= turbo_frame_tag :notice, class: 'w-full' do %>
+    <% end %>
+
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
